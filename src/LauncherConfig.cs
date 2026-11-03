@@ -43,20 +43,20 @@ namespace ExtraLifeLauncher
             },
             new GameInfo
             {
-                Id = "thesilo",
-                Name = "The Silo",
-                Stage = "COMING SOON",
-                // Not on GitHub yet. Set RepoOwner/RepoName to the public releases repo once the first build is up.
-                RepoOwner = null,
-                RepoName = null,
-                AssetName = "TheSilo-Windows.zip",
-                ExeName = "The Silo.exe",
-                InstallRoot = Path.Combine(LocalAppData, "ExtraLifeInteractive", "TheSilo"),
-                Accent = Color.FromArgb(232, 160, 40),
-                AccentSoft = Color.FromArgb(246, 192, 96),
-                Glow = Color.FromArgb(200, 120, 20),
-                Logo = Resources.Load("silo.logo-full.png"),
-                Icon = Resources.Load("silo.icon.png"),
+                Id = "idlefarmer",
+                Name = "Idle Farmer",
+                Stage = "EARLY ACCESS",
+                RepoOwner = "llallenll",
+                RepoName = "Idle-Farmer-Releases",
+                // Release zips carry the version (Idle-Farmer-v0.1.0-Windows.zip), so match any .zip.
+                AssetName = null,
+                ExeName = "Idle Farmer.exe",
+                InstallRoot = Path.Combine(LocalAppData, "ExtraLifeInteractive", "IdleFarmer"),
+                Accent = Color.FromArgb(236, 132, 36),
+                AccentSoft = Color.FromArgb(250, 190, 100),
+                Glow = Color.FromArgb(220, 150, 30),
+                Logo = Resources.Load("idlefarmer.logo-full.png"),
+                Icon = Resources.Load("idlefarmer.icon.png"),
             },
         };
     }

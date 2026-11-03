@@ -27,8 +27,8 @@ $compilerArgs = @(
     "/resource:$(Join-Path $assets 'whohaunts\logo-full.png'),ExtraLifeLauncher.whohaunts.logo-full.png",
     "/resource:$(Join-Path $assets 'whohaunts\icon.png'),ExtraLifeLauncher.whohaunts.icon.png",
     "/resource:$(Join-Path $assets 'whohaunts\paper.png'),ExtraLifeLauncher.whohaunts.paper.png",
-    "/resource:$(Join-Path $assets 'silo\logo-full.png'),ExtraLifeLauncher.silo.logo-full.png",
-    "/resource:$(Join-Path $assets 'silo\icon.png'),ExtraLifeLauncher.silo.icon.png",
+    "/resource:$(Join-Path $assets 'idlefarmer\logo-full.png'),ExtraLifeLauncher.idlefarmer.logo-full.png",
+    "/resource:$(Join-Path $assets 'idlefarmer\icon.png'),ExtraLifeLauncher.idlefarmer.icon.png",
     '/r:System.dll', '/r:System.Core.dll', '/r:System.Drawing.dll', '/r:System.Windows.Forms.dll',
     '/r:System.Net.Http.dll', '/r:System.IO.Compression.dll', '/r:System.IO.Compression.FileSystem.dll',
     '/r:System.Web.Extensions.dll'

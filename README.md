@@ -5,7 +5,7 @@ The game launcher for Extra Life Interactive. It lists the studio's games, insta
 Games right now:
 
 - **Who Haunts** (early access), from `llallenll/Ghost-Hunter-Releases`
-- **The Silo** (coming soon), not on GitHub yet, so the launcher shows it as Coming Soon
+- **Idle Farmer** (early access), from `llallenll/Idle-Farmer-Releases`
 
 ## Giving it to testers
 
@@ -17,11 +17,11 @@ It installs per user (no admin prompt) to `%LOCALAPPDATA%\Programs\Extra Life La
 
 The exe isn't code-signed, so Windows SmartScreen shows "Windows protected your PC" the first time. Testers click **More info**, then **Run anyway**.
 
-## Adding a game, or releasing The Silo
+## Adding a game
 
 Every game is an entry in `LauncherConfig.Games` (`src/LauncherConfig.cs`): its name, release repo, zip asset name, exe name, install folder, colours and art. The art lives in `assets/<game>/` and is embedded by `build.ps1` (add a `/resource` line for each new file).
 
-To put The Silo on the launcher for real, create a **public** releases repo, attach `TheSilo-Windows.zip` (with `The Silo.exe` inside) to a release, then set `RepoOwner` and `RepoName` on its entry. Leaving them `null` keeps it as Coming Soon. Then publish a launcher update (below).
+A new game needs a **public** releases repo with a zip (holding the game's exe) attached to each release; set `RepoOwner` and `RepoName` on its entry. Leaving them `null` shows the game as Coming Soon. Then publish a launcher update (below).
 
 ## How it works
 
@@ -52,7 +52,7 @@ The script builds the exe and the installer, then creates release `v<version>` h
 ## Art
 
 - `assets/studio/logo-source.png` is the Extra Life Interactive logo; `mark-source.png` is the heart cut from it as a rounded tile. `tools/make-icon.ps1` turns that into `assets/studio/mark.png` (sidebar) and `assets/icon.ico` (exe and installer icon). Rerun it after replacing the mark.
-- `assets/whohaunts/` and `assets/silo/` hold each game's hero logo (`logo-full.png`, transparent), sidebar icon (`icon.png`) and source art.
+- `assets/whohaunts/` and `assets/idlefarmer/` hold each game's hero logo (`logo-full.png`, transparent), sidebar icon (`icon.png`) and source art.
 - `assets/wizard-*.bmp` are the installer's side and header images.
 
 ## Publishing game builds
